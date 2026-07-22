@@ -4,7 +4,7 @@ using System.Text;
 
 namespace playwright
 {
-    internal class mouse_Actions
+    public  class mouse_Actions
     {
 
 
