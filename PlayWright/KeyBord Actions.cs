@@ -25,7 +25,7 @@ namespace playwright
 
 
             await page.GotoAsync("https://welcometotesting7.blogspot.com/2024/01/Seleniumjava.html");
-
+            await page.Locator("hjdgfyh").ClickAsync()  ;
 
 
 
