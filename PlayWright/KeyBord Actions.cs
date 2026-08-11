@@ -24,8 +24,14 @@ namespace playwright
 
 
 
-            await page.GotoAsync("https://welcometotesting7.blogspot.com/2024/01/Seleniumjava.html");
-            await page.Locator("hjdgfyh").ClickAsync()  ;
+            await page.GotoAsync("https://www.hyrtutorials.com/p/basic-controls.html");
+            // await page.Locator("hjdgfyh").ClickAsync()  ;
+            await page.GetByRole(AriaRole.Textbox, new() { Name = "Username" }).ClickAsync();
+            await page.GetByRole(AriaRole.Textbox, new() { Name = "Username" }).FillAsync("sdfghjk");
+            await page.GetByRole(AriaRole.Textbox, new() { Name = "Password" }).ClickAsync();
+            await page.GetByRole(AriaRole.Textbox, new() { Name = "Password" }).FillAsync("ertyui");
+            await page.GetByRole(AriaRole.Button, new() { Name = "Login" }).ClickAsync();
+
 
 
 

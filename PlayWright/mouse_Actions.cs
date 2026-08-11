@@ -8,11 +8,6 @@ namespace playwright
     public class mouse_Actions
     {
 
-        
-
-
-       
-
             [Test]
 
             public async Task MOUSEACTIONS()
@@ -25,8 +20,6 @@ namespace playwright
                 });
 
                 var page = await nanda1.NewPageAsync();
-
-
 
                 await page.GotoAsync("https://testautomationpractice.blogspot.com/");
 
@@ -65,10 +58,6 @@ namespace playwright
             await page.Mouse.UpAsync();
             await page.WaitForTimeoutAsync(3000);
             await page.Mouse.MoveAsync(300, 300);
-
-
-
-
 
             await page.Mouse.WheelAsync(100, 1000);
 
