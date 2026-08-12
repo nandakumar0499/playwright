@@ -9,10 +9,6 @@ namespace playwright
     {
 
             [Test]
-
-
-
-
             public async Task MOUSEACTIONS()
             {
 

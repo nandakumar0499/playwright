@@ -74,15 +74,28 @@ namespace playwright
 
 
 
+        [Test]
+        public async Task Confirmm()
+        {
+            using var nanda = await Playwright.CreateAsync();
+            await using var nanda1 = await nanda.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
+            {
+                Headless = false,
+            });
+            var page = await nanda1.NewPageAsync();
 
 
 
+            await page.GotoAsync("https://github.com/nandakumar0499");
+
+
+            await page.WaitForTimeoutAsync(5000);
 
 
 
+        }
 
 
 
-
-    }
+        }
 }
