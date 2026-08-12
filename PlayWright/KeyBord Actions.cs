@@ -8,8 +8,6 @@ namespace playwright
     internal class KeyBord_Actions
     {
 
-
-
         [Test]
 
         public async Task KEYBORD_ACTIONS()
